@@ -1,33 +1,24 @@
 package io.artisancodes.app.model;
 
 public class Author {
-    private String firstName;
-    private String lastName;
+
+    private String name;
     private String description;
 
     public Author() {
     }
 
-    public Author(String firstName, String lastName, String description) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Author(String name, String description) {
+        this.name = name;
         this.description = description;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -41,8 +32,7 @@ public class Author {
     @Override
     public String toString() {
         return "Author{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
